@@ -1,7 +1,7 @@
-## Parser Using GUI
+# Parser Using GUI
 This is a project to implement a parser and GUI using Python, organized using object-oriented programming principles.
 
-# Context Free Grammar
+## Context Free Grammar
 line → expression exit_command
 
 line → line expression exit_command
@@ -60,7 +60,7 @@ exit_command → EXIT
 
 -------------------------------------------------------------------------------------------------------------------
 
-# Description
+## Description
 
 Line:
 
@@ -103,7 +103,7 @@ The exit command "EXIT"
 # Python Tokenizer Documentation
 This document describes the implementation of a lexical analyzer (tokenizer) in Python, designed to convert a string input into a list of tokens based on specified patterns. The tokenizer handles whitespace, comments, and various syntactic elements of a simplified programming language.
 
-# Token Types
+## Token Types
 Each token type corresponds to a specific pattern in the input language. The tokenizer identifies the following token types:
 
 Whitespace: Ignored and not included in the output token list.
@@ -128,7 +128,7 @@ Numbers: Decimal numbers, which may include an integer part followed by a fracti
 
 Parentheses: Left ( and right ) parentheses are used for grouping expressions.
 
-# Function Description
+## Function Description
 tokenize(input_string)
 
 Parameters:
@@ -149,7 +149,7 @@ If no patterns match the current beginning of the string, a ValueError is raised
 
 ![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/9d781855-73f6-4d41-9b3e-ce0024f19b1b)
 
-# Error Handling
+## Error Handling
 
 If an unrecognized sequence is encountered in the input string, a ValueError is raised with a message indicating the problematic part of the input.
 
@@ -160,14 +160,14 @@ If an unrecognized sequence is encountered in the input string, a ValueError is 
 
 # Node Classes
 
-# Node
+## Node
 
 Description: Base class for all nodes in the AST. This class is abstract and serves as a foundation for specific types of nodes that represent parts of an expression.
 
 Methods:
 None explicitly defined; serves as a superclass for type hierarchy and common behaviors.
 
-# Expression(Node)
+## Expression(Node)
 Description: Represents a binary expression, which includes an operator and two operand expressions.
 
 Attributes:
@@ -179,7 +179,7 @@ right: The right-hand operand (Node), optional if the operator is not present.
 Methods:
 __str__(): Returns a string representation of the expression, which recursively includes the string representations of the operands and the operator.
 
-# Number(Node)
+## Number(Node)
 Description: Represents a numeric literal in an expression.
 
 Attributes:
@@ -188,7 +188,7 @@ value: The numeric value (str) of the number.
 Methods:
 __str__(): Returns the string representation of the number.
 
-# Variable(Node)
+## Variable(Node)
 
 Description: Represents a variable identifier in an expression.
 
@@ -200,7 +200,7 @@ __str__(): Returns the identifier of the variable as its string representation.
 
 # Parser Class
 
-# Parser
+## Parser
 
 Description: Handles parsing of a list of tokens into an AST based on a simplified set of grammar rules for arithmetic expressions.
 
@@ -220,14 +220,14 @@ Throws exceptions with messages indicating mismatches between expected and actua
 Parsing Process
 The parser operates by recursive descent, translating a flat list of tokens into a nested tree structure that reflects the precedence and associativity of arithmetic operators. The parsing methods (expression, term, and factor) represent different levels of precedence in the grammar.
 
-# Parsing Process
+## Parsing Process
 The parser operates by recursive descent, translating a flat list of tokens into a nested tree structure that reflects the precedence and associativity of arithmetic operators. The parsing methods (expression, term, and factor) represent different levels of precedence in the grammar.
 
 ![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/f0878700-caf7-4a4c-bdd2-7578f657be30)
 
 ![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/f718bb17-62bb-4197-a17d-d77011d48a73)
 
-# Extensibility
+## Extensibility
 
 The architecture of the parser and node classes is designed to be easily extendable to support additional features such as more complex expressions, additional operators, or different types of statements.
 
