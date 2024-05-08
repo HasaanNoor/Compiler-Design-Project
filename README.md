@@ -163,7 +163,7 @@ Description: Base class for all nodes in the AST. This class is abstract and ser
 Methods:
 None explicitly defined; serves as a superclass for type hierarchy and common behaviors.
 
-Expression(Node)
+# Expression(Node)
 Description: Represents a binary expression, which includes an operator and two operand expressions.
 
 Attributes:
@@ -175,7 +175,7 @@ right: The right-hand operand (Node), optional if the operator is not present.
 Methods:
 __str__(): Returns a string representation of the expression, which recursively includes the string representations of the operands and the operator.
 
-Number(Node)
+# Number(Node)
 Description: Represents a numeric literal in an expression.
 
 Attributes:
@@ -184,7 +184,7 @@ value: The numeric value (str) of the number.
 Methods:
 __str__(): Returns the string representation of the number.
 
-Variable(Node)
+# Variable(Node)
 
 Description: Represents a variable identifier in an expression.
 
