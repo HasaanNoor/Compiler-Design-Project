@@ -1,5 +1,3 @@
-![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/ed360ead-c832-4339-9573-3fc785a575ab)# Python Parser with GUI
-
 This is a project to implement a parser and GUI using Python, organized using object-oriented programming principles.
 
 # Context Free Grammar
@@ -146,3 +144,11 @@ Advances the position in the input string past the end of the matched token.
 If no patterns match the current beginning of the string, a ValueError is raised indicating an invalid token.
 
 ![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/b1161167-a04b-4185-a5f6-a6a92081af3c)
+
+![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/9d781855-73f6-4d41-9b3e-ce0024f19b1b)
+
+# Error Handling
+
+If an unrecognized sequence is encountered in the input string, a ValueError is raised with a message indicating the problematic part of the input.
+
+
