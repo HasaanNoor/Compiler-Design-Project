@@ -152,3 +152,64 @@ If no patterns match the current beginning of the string, a ValueError is raised
 If an unrecognized sequence is encountered in the input string, a ValueError is raised with a message indicating the problematic part of the input.
 
 
+# Python Expression Parser
+
+# Node Classes
+
+Node
+
+Description: Base class for all nodes in the AST. This class is abstract and serves as a foundation for specific types of nodes that represent parts of an expression.
+
+Methods:
+None explicitly defined; serves as a superclass for type hierarchy and common behaviors.
+
+Expression(Node)
+Description: Represents a binary expression, which includes an operator and two operand expressions.
+
+Attributes:
+
+left: The left-hand operand (Node).
+operator: The operator (str) as a string symbol.
+right: The right-hand operand (Node), optional if the operator is not present.
+
+Methods:
+__str__(): Returns a string representation of the expression, which recursively includes the string representations of the operands and the operator.
+
+Number(Node)
+Description: Represents a numeric literal in an expression.
+
+Attributes:
+value: The numeric value (str) of the number.
+
+Methods:
+__str__(): Returns the string representation of the number.
+
+Variable(Node)
+
+Description: Represents a variable identifier in an expression.
+
+Attributes:
+identifier: The name (str) of the variable.
+
+Methods:
+__str__(): Returns the identifier of the variable as its string representation.
+Parser Class
+Parser
+Description: Handles parsing of a list of tokens into an AST based on a simplified set of grammar rules for arithmetic expressions.
+Attributes:
+tokens: A list of tuples where each tuple represents a token in the form (token_type, token_value).
+current: The current position (int) in the token list that the parser is processing.
+Methods:
+eat(token_type): Consumes the current token if it matches the expected token_type, otherwise raises an exception.
+parse(): Starts the parsing process and returns the root of the AST.
+expression(): Parses expressions involving addition and subtraction.
+term(): Parses expressions involving multiplication and division.
+factor(): Handles parsing of numbers, variables, and nested expressions.
+
+Error Handling:
+Throws exceptions with messages indicating mismatches between expected and actual tokens, facilitating debugging of syntax errors.
+Parsing Process
+The parser operates by recursive descent, translating a flat list of tokens into a nested tree structure that reflects the precedence and associativity of arithmetic operators. The parsing methods (expression, term, and factor) represent different levels of precedence in the grammar.
+
+
+
