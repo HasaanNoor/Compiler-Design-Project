@@ -219,6 +219,17 @@ Throws exceptions with messages indicating mismatches between expected and actua
 Parsing Process
 The parser operates by recursive descent, translating a flat list of tokens into a nested tree structure that reflects the precedence and associativity of arithmetic operators. The parsing methods (expression, term, and factor) represent different levels of precedence in the grammar.
 
+# Parsing Process
+The parser operates by recursive descent, translating a flat list of tokens into a nested tree structure that reflects the precedence and associativity of arithmetic operators. The parsing methods (expression, term, and factor) represent different levels of precedence in the grammar.
+
+![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/f0878700-caf7-4a4c-bdd2-7578f657be30)
+
+![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/f718bb17-62bb-4197-a17d-d77011d48a73)
+
+# Extensibility
+
+The architecture of the parser and node classes is designed to be easily extendable to support additional features such as more complex expressions, additional operators, or different types of statements.
+
 
 
 -------------------------------------------------------------------------------------------------------------------
