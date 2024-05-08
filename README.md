@@ -97,6 +97,7 @@ Exit Command:
 
 The exit command "EXIT"
 
+-------------------------------------------------------------------------------------------------------------------
 
 # Python Tokenizer Documentation
 This document describes the implementation of a lexical analyzer (tokenizer) in Python, designed to convert a string input into a list of tokens based on specified patterns. The tokenizer handles whitespace, comments, and various syntactic elements of a simplified programming language.
