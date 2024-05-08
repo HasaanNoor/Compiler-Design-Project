@@ -151,6 +151,8 @@ If no patterns match the current beginning of the string, a ValueError is raised
 
 If an unrecognized sequence is encountered in the input string, a ValueError is raised with a message indicating the problematic part of the input.
 
+-------------------------------------------------------------------------------------------------------------------
+
 
 # Python Expression Parser
 
@@ -218,3 +220,4 @@ The parser operates by recursive descent, translating a flat list of tokens into
 
 
 
+-------------------------------------------------------------------------------------------------------------------
