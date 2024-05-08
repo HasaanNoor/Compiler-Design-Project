@@ -1,4 +1,4 @@
-# Python Parser with GUI
+![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/ed360ead-c832-4339-9573-3fc785a575ab)# Python Parser with GUI
 
 This is a project to implement a parser and GUI using Python, organized using object-oriented programming principles.
 
@@ -144,3 +144,5 @@ The function iterates over the input string, matching patterns in the order they
 If the token type is not None (i.e., not whitespace or a comment), appends a tuple to the result list containing the token type and the matched string.
 Advances the position in the input string past the end of the matched token.
 If no patterns match the current beginning of the string, a ValueError is raised indicating an invalid token.
+
+![image](https://github.com/HasaanNoor/Compiler-Design-Project/assets/122407889/b1161167-a04b-4185-a5f6-a6a92081af3c)
