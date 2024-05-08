@@ -156,7 +156,7 @@ If an unrecognized sequence is encountered in the input string, a ValueError is 
 
 # Node Classes
 
-Node
+# Node
 
 Description: Base class for all nodes in the AST. This class is abstract and serves as a foundation for specific types of nodes that represent parts of an expression.
 
@@ -193,12 +193,17 @@ identifier: The name (str) of the variable.
 
 Methods:
 __str__(): Returns the identifier of the variable as its string representation.
-Parser Class
-Parser
+
+# Parser Class
+
+# Parser
+
 Description: Handles parsing of a list of tokens into an AST based on a simplified set of grammar rules for arithmetic expressions.
+
 Attributes:
 tokens: A list of tuples where each tuple represents a token in the form (token_type, token_value).
 current: The current position (int) in the token list that the parser is processing.
+
 Methods:
 eat(token_type): Consumes the current token if it matches the expected token_type, otherwise raises an exception.
 parse(): Starts the parsing process and returns the root of the AST.
